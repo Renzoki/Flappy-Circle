@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: skyblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+#game {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background: lightblue;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+#bird {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: yellow;
+    top: 200px;
+    left: 100px;
+    position: absolute;
+}
+
+.pipe {
+    width: 60px;
+    position: absolute;
+    background: green;
+}
+
+.top-pipe {
+    top: 0;
+}
+
+.bottom-pipe {
+    bottom: 0;
+}
+
+/* dashboard */
+
+#column {
+    width: 20%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#scoreboard {
+    font-family: monospace;
+    color: white;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+#back-button {
+    width: 50%;
+    height: 20%;
+    border: none;
+    background-color: white;
+    border-radius: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: monospace;
+    font-size: 1.5em;
+    transition: .25s;
+    text-decoration: none;
+    color: black;
+}
+
+#back-button:hover {
+    transform: translateY(5px);
+    background-color: yellow;
+}
